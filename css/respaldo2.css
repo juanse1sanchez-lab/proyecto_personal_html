@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+     margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    color: #fff;
+    /* linear gradiente hace que el fondo no sea tan brillante*/
+    background-image: linear-gradient(rgba(11, 15, 25, 0.8), rgba(11, 15, 25, 0.8)), url('../img/fondo.jpg');
+    /* Hace que la imagen cubra todo el ancho y alto de la pantalla sin deformarse */
+    background-size: cover;     
+    /* Fija la imagen para que no se mueva al hacer scroll  */
+    background-attachment: fixed;
+    margin: 0;
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111827;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 15px;
+    border-bottom: 1px solid #1f2937;
+}
+
+.logo, .imgperfil {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img, .imgperfil img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.banner {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    border: 1px solid #374151;
+    border-radius: 25px;
+    background-color: #1f2937;
+}
+
+.search-box form {
+    width: 100;
+    display: flex;
+    align-items: center;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    padding: 0;
+    width: 100%;
+    font-size: 13px;
+    background: transparent;
+    color: #fff;
+   
+}
+
+.sidebar {
+    width: 260px;
+    background-color: #111827;
+    position: fixed;
+    border-right: 1px solid #1f2937;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    color: #f1f5f9;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+nav a {
+    color: #9ca3af;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background 0.2s, color 0.2s;
+}
+
+nav a:hover, nav a.active {
+    background-color: #1e3a8a;
+    color: #ffffff;
+}
+
+main {
+    margin-top: 80px;
+    padding: 15px;
+    flex: 1;
+}
+
+.games-section h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.juegos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 2 columnas en celulares */
+    gap: 12px;
+}
+
+.juegos section{
+    position: relative;
+    width: 100%;
+    height: 110px;
+    overflow: hidden;
+}
+
+.juegos img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.game-card{
+    background-color: #474b53;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #1f2937;
+    display: flex;
+    flex-direction: column;
+}
+
+.games-section{
+
+}
+

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>PlayZone - Proyecto personal</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/respaldo.css">
+    <!-- Iconos para el menú hamburguesa -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Fondo oscuro para cuando el menú móvil esté abierto -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-left">
+            <button class="menu-toggle-btn" id="menuToggleBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="logo">
+                <img src="https://1000logos.net/wp-content/uploads/2017/07/Color-Roblox-Logo.png" alt="Logo PlayZone">
+            </div>
+        </div>
+        
+        <div class="banner">
+            <div class="search-box">
+                <form action="/buscar" method="get" class="search-bar">
+                    <input type="search" name="q" placeholder="Buscar juegos, usuarios..." required>
+                </form>
+            </div>
+        </div>
+
+        <div class="imgperfil">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/068/247/324/small/abstract-user-silhouette-icon-representing-person-profile-and-identity-in-digital-spaces-free-png.png" alt="Perfil de usuario">
+        </div>
+    </header>
+
+    <!-- SIDEBAR (Barra lateral de navegación) -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header-mobile">
+            <span class="sidebar-title">Menú</span>
+            <button class="close-sidebar-btn" id="closeSidebarBtn">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                <li><a href="#"><i class="fa-solid fa-compass"></i> Explorar</a></li>
+                <li><a href="#"><i class="fa-solid fa-gamepad"></i> Juegos</a></li>
+                <li><a href="#"><i class="fa-solid fa-user-group"></i> Amigos</a></li>
+                <li><a href="#"><i class="fa-solid fa-envelope"></i> Mensajes</a></li>
+                <li><a href="#"><i class="fa-solid fa-user"></i> Perfil</a></li>
+                <li><a href="#"><i class="fa-solid fa-gear"></i> Configuración</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    
+    <main>
+        <section class="games-section">
+            <h2>Juegos destacados</h2>
+            <div class="juegos">
+               
+                <article class="game-card">
+                    <div class="card-img-container">
+                        <img src="https://1000logos.net/wp-content/uploads/2021/04/Clash-Royale-logo.png" alt="Clash Royale">
+                        <button class="play">Play</button>
+                    </div>
+                    <div class="card-info">
+                        <h2>Clash Royale</h2>
+                        <span class="category">Estrategia</span>
+                    </div>
+                </article>
+
+                
+                <article class="game-card">
+                    <div class="card-img-container">
+                        <img src="https://1000logos.net/wp-content/uploads/2020/09/Call-of-Duty-Logo.png" alt="Call of Duty">
+                        <button class="play">Play</button>
+                    </div>
+                    <div class="card-info">
+                        <h2>Call of Duty</h2>
+                        <span class="category">Acción</span>
+                    </div>
+                </article>
+
+                
+                <article class="game-card">
+                    <div class="card-img-container">
+                        <img src="https://1000logos.net/wp-content/uploads/2020/11/Club-Penguin-Logo.png" alt="Club Penguin">
+                        <button class="play">Play</button>
+                    </div>
+                    <div class="card-info">
+                        <h2>Club Penguin</h2>
+                        <span class="category">Casual</span>
+                    </div>
+                </article>
+
+                
+                <article class="game-card">
+                    <div class="card-img-container">
+                        <img src="https://1000logos.net/wp-content/uploads/2021/02/Brawl-Stars-logo.png" alt="Brawl Stars">
+                        <button class="play">Play</button>
+                    </div>
+                    <div class="card-info">
+                        <h2>Brawl Stars</h2>
+                        <span class="category">Acción</span>
+                    </div>
+                </article>
+
+
+                <article class="game-card">
+                    <div class="card-img-container">
+						<img src="https://1000logos.net/wp-content/uploads/2017/09/Roblox-Logo.png" alt="Roblox">
+                        <button class="play">Play</button>
+                    </div>
+                    <div class="card-info">
+						<h2>Roblox</h2>
+                        <span class="category">Acción</span>
+                    </div>
+                </article>
+				
+				
+				
+				<article class="game-card">
+					<div class="card-img-container">
+						<img src="https://1000logos.net/wp-content/uploads/2025/08/Littlest-Pet-Shop-Logo.png" alt="Littlest-Pet-Shop">
+						<button class="play">Play</button>
+					</div>
+					<div class="card-info">
+						<h2>Littlest-Pet-Shop</h2>
+						<span class="category">Acción</span>
+					</div>
+				</article>
+						
+				<article class="game-card">
+					<div class="card-img-container">
+						<img src="https://1000logos.net/wp-content/uploads/2020/09/Doom-logo.png" alt="Doom-logo">
+						<button class="play">Play</button>
+					</div>
+					<div class="card-info">
+						<h2>Doom</h2>
+						<span class="category">Acción</span>
+					</div>
+				</article>
+
+				<article class="game-card">
+					<div class="card-img-container">
+						<img src="https://1000logos.net/wp-content/uploads/2023/05/Fall-Guys-Logo.png" alt="Fall-Guys-Logo">
+						<button class="play">Play</button>
+					</div>
+					<div class="card-info">
+						<h2>Fall Guys</h2>
+						<span class="category">Acción</span>
+					</div>
+				</article>
+						
+				<article class="game-card">
+					<div class="card-img-container">
+						<img src="https://1000logos.net/wp-content/uploads/2022/10/Grand-Theft-Auto-V-logo.png" alt="Grand-Theft-Auto-V-logo">
+						<button class="play">Play</button>
+					</div>
+					<div class="card-info">
+						<h2>GTA-V</h2>
+						<span class="category">Acción</span>
+					</div>
+				</article>
+						
+				<article class="game-card">
+					<div class="card-img-container">
+						<img src="https://1000logos.net/wp-content/uploads/2025/01/Hypixel-Logo.png" alt="Hypixel-Logo">
+						<button class="play">Play</button>
+					</div>
+					<div class="card-info">
+						<h2>Hypixel</h2>
+						<span class="category">Acción</span>
+					</div>
+				</article>
+
+				<article class="game-card">
+					<div class="card-img-container">
+						<img src="https://1000logos.net/wp-content/uploads/2020/09/Mortal-Kombat-Logo.png" alt="Mortal-Kombat-Logo">
+						<button class="play">Play</button>
+					</div>
+					<div class="card-info">
+						<h2>Mortal Kombat</h2>
+						<span class="category">Acción</span>
+					</div>
+				</article>
+						
+				<article class="game-card">
+					<div class="card-img-container">
+						<img src="https://1000logos.net/wp-content/uploads/2026/09/One-Piece-Grand-Gourmet-Logo.png" alt="One-Piece-Grand-Gourmet-Logo">
+						<button class="play">Play</button>
+					</div>
+					<div class="card-info">
+						<h2>One Piece</h2>
+						<span class="category">Acción</span>
+					</div>
+				</article>
+
+				<article class="game-card">
+					<div class="card-img-container">
+						<img src="https://1000logos.net/wp-content/uploads/2021/03/Sonic-the-Hedgehog-English-logo.png" alt="Sonic-the-Hedgehog-English-logo">
+						<button class="play">Play</button>
+					</div>
+					<div class="card-info">
+						<h2>Sonic</h2>
+						<span class="category">Acción</span>
+					</div>
+				</article>
+						
+				<article class="game-card">
+					<div class="card-img-container">
+						<img src="img/imagen3.png" alt="imagen3">
+						<button class="play">Play</button>
+					</div>
+					<div class="card-info">
+						<h2>Juego</h2>
+						
+					</div>
+				</article>
+						
+
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Derechos reservados 2026</p>
+    </footer>
+
+    <!-- Script JavaScript para controlar el menú móvil -->
+    <script>
+        const menuToggleBtn = document.getElementById('menuToggleBtn');
+        const closeSidebarBtn = document.getElementById('closeSidebarBtn');
+        const sidebar = document.getElementById('sidebar');
+        const sidebarOverlay = document.getElementById('sidebarOverlay');
+
+        function toggleMenu() {
+            sidebar.classList.toggle('active');
+            sidebarOverlay.classList.toggle('active');
+        }
+
+        menuToggleBtn.addEventListener('click', toggleMenu);
+        closeSidebarBtn.addEventListener('click', toggleMenu);
+        sidebarOverlay.addEventListener('click', toggleMenu);
+    </script>
+</body>
+</html>
