@@ -14,6 +14,7 @@ main{
     margin-left: 260px;
     margin-top: 70px;
     padding: 30px;
+    min-height: calc(100vh - 170px);
 }
 
 header {
@@ -125,15 +126,85 @@ nav a:hover, nav a.active {
 
 
 .games-section{
-    padding: 20px;
+    padding: 2px;
     color: #fff;
     
 }
+
 .games-section h2 {
     font-size: 18px;
     margin-bottom: 15px;
    
 }
+
+.games-section h1 {
+    margin-bottom: 0;
+}
+
+.games-section .amigos {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.games-section h3{
+    font-size: 18px;
+    
+}
+
+.perfil-card {
+    background-color: #474b53;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px black;
+    transition: transform 0.2s;
+}
+
+.card-img-perfil{
+    border-radius: 50%;
+    position: relative;
+    width: 100%;
+    height: 140px;
+    background-color: #474b53;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card-img-perfil a{
+    position: relative;
+    width: 100%;
+    height: 140px;
+    background-color: #474b53;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card-img-perfil img{
+    max-height: 80%;
+    max-width: 80%;
+    object-fit: contain;
+}
+
+.card-img-perfil .play{
+    position: absolute;
+    bottom: 10px;
+    background-color: #ff4655;
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+
+}
+
 
 .juegos{
     display: grid;
@@ -165,7 +236,24 @@ nav a:hover, nav a.active {
     overflow: hidden;
 }
 
+.card-img-container a{
+    position: relative;
+    width: 100%;
+    height: 140px;
+    background-color: #474b53;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
 .card-img-container img{
+    max-height: 80%;
+    max-width: 80%;
+    object-fit: contain;
+}
+
+.card-img-container a img{
     max-height: 80%;
     max-width: 80%;
     object-fit: contain;
@@ -206,7 +294,7 @@ nav a:hover, nav a.active {
 }
 
 footer {
-    margin-left: 260px;
+    margin-left: 210px;
     text-align: center;
     padding: 2px;
     background-color: #1a1a1a;
